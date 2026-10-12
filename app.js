@@ -32,13 +32,15 @@ function checkAnswer() {
   }
 
   if (answer = questions[currentQuestion].answer) {
-    score =+ 1;
+    score = score + 1;
+    console.log(score)
     messageDisplay.textContent = "Correct!";
-  } else {
+  } 
+  else {
     messageDisplay.textContent = "Incorrect!";
   }
-
-  scoreDisplay.textcontent = score;
+  console.log(scoreDisplay)
+  scoreDisplay.textContent = score;
   currentQuestion += 1;
   answerInput.value = "";
 
