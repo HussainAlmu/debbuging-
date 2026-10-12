@@ -31,12 +31,12 @@ function checkAnswer() {
     return;
   }
 
-  if (answer = questions[currentQuestion].answer) {
+  if (answer === questions[currentQuestion].answer) {
     score = score + 1;
     console.log(score)
     messageDisplay.textContent = "Correct!";
-  } 
-  else {
+  } else if (answer !== questions[currentQuestion].answer) {
+    console.log("hi")
     messageDisplay.textContent = "Incorrect!";
   }
   console.log(scoreDisplay)
