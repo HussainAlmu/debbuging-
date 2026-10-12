@@ -38,6 +38,7 @@ function checkAnswer() {
   } else if (answer !== questions[currentQuestion].answer) {
     console.log("hi")
     messageDisplay.textContent = "Incorrect!";
+    score = 0
   }
   console.log(scoreDisplay)
   scoreDisplay.textContent = score;
