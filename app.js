@@ -16,7 +16,9 @@ const questions = [
 let currentQuestion = 0;
 let score = 0;
 
+ console.log('hi')
 function showQuestion() {
+    console.log(questions)
 
   questionDisplay.textContent = questions[currentQuestion].question;
 }
